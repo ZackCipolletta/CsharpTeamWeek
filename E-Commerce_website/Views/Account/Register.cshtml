@@ -27,7 +27,9 @@
             <input type="submit" value="Register" />
         }
 
-        <p id="back-to-login">@Html.ActionLink("Back To Login", "Login")</p>
+            <a href='@Url.Action("Index", "Account")'>
+                <button class="login-button">Back To Login</button>
+            </a>
     </div>
 </div>
 

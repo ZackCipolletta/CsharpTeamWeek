@@ -18,7 +18,7 @@ div#footer {
   width: 100%;
   color: #CCC;
   background: #333;
-  padding: 8px;
+  padding: 5px;
 }
 
 
@@ -44,15 +44,15 @@ div#footer {
 
 @keyframes bg-animation {
   0% {
-      background-position: left
+    background-position: left
   }
 
   50% {
-      background-position: right
+    background-position: right
   }
 
   100% {
-      background-position: left
+    background-position: left
   }
 }
 
@@ -60,41 +60,44 @@ div#footer {
 
 .login-container {
   width: 400px;
-  background-color: rgba(255,255,255,0.13);
+  background-color: rgba(255, 255, 255, 0.13);
   position: absolute;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   border-radius: 10px;
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(255,255,255,0.1);
-  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   padding: 50px 35px;
   padding-bottom: 30px;
   color: #ffffff;
   letter-spacing: 0.5px;
   outline: none;
   border: none;
-  font-family: 'Poppins',sans-serif;
-  }
-  .login-container h3{
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-container h3 {
   font-size: 32px;
   font-weight: 500;
   line-height: 42px;
   text-align: center;
-  }
-  .login-container label{
+}
+
+.login-container label {
   display: block;
   margin-top: 30px;
   font-size: 16px;
   font-weight: 500;
-  }
-  .login-container input[type="text"],
-  .login-container input[type="password"] {
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
   display: block;
   height: 50px;
   width: 100%;
-  background-color: rgba(255,255,255,0.07);
+  background-color: rgba(255, 255, 255, 0.07);
   border-radius: 3px;
   padding: 0 10px;
   margin-top: 8px;
@@ -103,11 +106,13 @@ div#footer {
   color: #ffffff;
   outline: none;
   border: none;
-  }
-  .login-container ::placeholder{
+}
+
+.login-container ::placeholder {
   color: #e5e5e5;
-  }
-  .login-container input[type="submit"]{
+}
+
+.login-container input[type="submit"] {
   width: 100%;
   background-color: #ffffff;
   color: #080710;
@@ -118,43 +123,44 @@ div#footer {
   cursor: pointer;
   text-decoration: none;
   margin-top: 20px;
-  border: 2px solid rgba(255,255,255,0.1);
-  box-shadow: 0 0 20px rgba(8,7,16,0.6);
-  }
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(8, 7, 16, 0.6);
+}
 
-  #register-link {
-    width: 100%;
-    background-color: #ffffff;
-    color: #080710;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 20px;
-    text-align: center;
-    text-decoration: none;
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 20px rgba(8,7,16,0.6);
-  }
+.login-button {
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(8, 7, 16, 0.6);
+}
 
-  #log-off {
-    width: 100%;
-    background-color: #ffffff;
-    color: #080710;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 20px;
-    text-align: center;
-    text-decoration: none;
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 20px rgba(8,7,16,0.6);
-  }
+#log-off {
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(8, 7, 16, 0.6);
+}
+
 /* .account-button{
   width: 100%;
   background-color: #ffffff;
@@ -166,7 +172,7 @@ div#footer {
   cursor: pointer;
   text-decoration: none;
 } */
-#back-to-login{
+#back-to-login {
   width: 100%;
   background-color: #ffffff;
   color: #080710;
@@ -179,10 +185,49 @@ div#footer {
   margin-top: 20px;
   text-align: center;
   text-decoration: none;
-  border: 2px solid rgba(255,255,255,0.1);
-  box-shadow: 0 0 20px rgba(8,7,16,0.6);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(8, 7, 16, 0.6);
 }
 
+#footer-login-button {
+  width: 5%;
+  height: 10%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 0px 0;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 2px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(8, 7, 16, 0.6);
+}
+
+#footer-logout-button {
+  width: 5%;
+  height: 10%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 0px 0;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 2px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(8, 7, 16, 0.6);
+}
+
+#login-status-message {
+  float: right;
+}
 
 
 
@@ -492,7 +537,7 @@ sup {
   top: -0.5em;
 }
 
- a {
+a {
   color: #000;
   text-decoration: none;
 }
@@ -9376,8 +9421,8 @@ fieldset:disabled .btn {
 
 .bg-blue {
 
-    background-image: linear-gradient(to right, blue , purple);
-  
+  background-image: linear-gradient(to right, blue, purple);
+
 }
 
 .bg-dark {

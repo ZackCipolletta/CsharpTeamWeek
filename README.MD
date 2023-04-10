@@ -21,9 +21,9 @@
 
 ## Setup/Installation Requirements
 
-<!-- 1. Clone this repo.
-2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory named "ParksLookup".
-3. Create a file named ['appsettings.json'] in the production directory (ParksLookup) and include a new database connection string. The string should be as follows:
+1. Clone this repo.
+2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory named "E-Commerce_website".
+3. Create a file named ['appsettings.json'] in the production directory (E-Commerce_website) and include a new database connection string. The string should be as follows:
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Port=3306[Or-Your-Desired-Port-Number];database=[DATABASE-NAME-HERE];uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];",
@@ -31,44 +31,14 @@
 }
 Create a database name, update username and password to match the username and password of your computer.
 4. Enter 'dotnet ef database update' in the terminal inside the production directory (this will create the database schema in MySQL which the application will access later), enter 'dotnet run' or 'dotnet watch run' in the command line to start the project in development mode with a watcher (Optionally, you can run "dotnet build" to compile the app without running it). 
-5. First you will need to register a user. Using Postman send a POST request to: http://localhost:5114/api/Account/regsiter. In the body of the request send:
-  {
-    "userName": "string",
-    "password": "string"
-  }
-6. Once a user is registered they are able to login by sending a POST request to: http://localhost:5114/api/Account/login. In the body of the request send:
-  {
-    "userName": "string",
-    "password": "string"
-  }
-7. Once you are logged in users can send POST requests to /api/Parks with the body:
-  {  
-    "type": "string", (type of park such as National or State)
-    "location": "string", (State)
-    "name": "string"
-  }
-8. Users are also able to send a GET request to /api/Parks to retrieve all parks in the database.
-9. Users can send a GET request with a specific id to get a specific park: /api/Parks/{id}.
-10. Users are able to update entries in the database by sending a PUT request to: /api/Parks{id} with the body:
-  {  
-    "parkId": {id},
-    "type": "string",
-    "location": "string",
-    "name": "string"
-  }
-11. Users are also able to delete entries by sending a DELETE request to /ap/Parks/{id}.
-12. Users are able to create reviews by sending a POST request to /api/Reviews with the body:
-  {
-    "parkId": 0,
-    "title": "string",
-    "description": "string",
-    "userName": "string"
-  }
-13. Users are also able to see all reviews, edit and delete reviews by following the same convention for parks with with the appropriate body. -->
-
+5. You will need to clone this repository to your desktop for the back end database: https://github.com/ZackCipolletta/EcommerseApi and follow set up instructions.
+6. Once both repositories are up and running users will be able to view and interact with the website.
+7. Users are able to browse all products, view products by category, see further details of each product, add and delete them to their shopping cart and even checkout using PayPal.
 
 ## Known Bugs
-*No known bugs at this time.
+* Once a user checks out using PayPal, the cart does not clear.
+* Users are able to register, but they do not seem to be getting saved to the database.  This causes an error as only users who are logged in are able to checkout.
+* The footer div containing links to logout and home index and which displays the username/email of a logged in user is not being properly displayed.
 
 ## License
 MIT

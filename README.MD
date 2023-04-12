@@ -17,6 +17,9 @@
 * Authentication
 
 ## Description
+This is an E-commerce website for an electronics retailer. The database of products is hosted by an Api which contains all of the information about the products.  Each page page queries the Api and populates with the information returned from the database. Users are able to browse the entire catalog of products (10 items per page), or are able to browse by category instead. Users are able to view more details about a given product, add it to or delete it from their cart and checkout via PayPal.
+
+While maybe not the most practical solution for a retailer, it was a fun project learning how to integrate the Api in such a way.
 
 
 ## Setup/Installation Requirements
@@ -33,7 +36,6 @@ Create a database name, update username and password to match the username and p
 4. Enter 'dotnet ef database update' in the terminal inside the production directory (this will create the database schema in MySQL which the application will access later), enter 'dotnet run' or 'dotnet watch run' in the command line to start the project in development mode with a watcher (Optionally, you can run "dotnet build" to compile the app without running it). 
 5. You will need to clone this repository to your desktop for the back end database: https://github.com/ZackCipolletta/EcommerseApi and follow set up instructions.
 6. Once both repositories are up and running users will be able to view and interact with the website.
-7. Users are able to browse all products, view products by category, see further details of each product, add and delete them to their shopping cart and even checkout using PayPal.
 
 ## Known Bugs
 * Once a user checks out using PayPal, the cart does not clear.
